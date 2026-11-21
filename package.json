@@ -1,0 +1,22 @@
+{
+  "name": "sail-aero-sim",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "基于空气动力学的帆船竞速模拟器（升力/阻力系数、视风、侧滑、横倾、极曲线 VPP）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "node scripts/build-node.mjs scripts/bench.ts && node dist-node/scripts/bench.js",
+    "validate": "node scripts/build-node.mjs scripts/validate-polar.ts && node dist-node/scripts/validate-polar.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>帆船空气动力模拟器</title>
+    <link rel="stylesheet" href="./src/ui/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand">⛵ 帆船空气动力 VPP 模拟器</div>
+        <nav class="tabs" id="tabs">
+          <button class="tab active" data-page="sailing">航行</button>
+          <button class="tab" data-page="trim">调帆</button>
+          <button class="tab" data-page="polar">极曲线</button>
+          <button class="tab" data-page="boat">船型</button>
+        </nav>
+      </header>
+      <main id="page-root" class="page-root"></main>
+      <footer class="statusbar" id="statusbar">
+        <span id="status-text">初始化中…</span>
+        <span class="perf" id="perf-text"></span>
+      </footer>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
